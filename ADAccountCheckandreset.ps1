@@ -1,7 +1,6 @@
 #This script will check AD to see if user is locked out and then prompt for a password change/set user to change password 
 #at next login
 
-
 $lock = Get-ADUser ($User = Read-Host -Prompt 'Input the user name') -Properties * | Select-Object LockedOut
 if ($lock.lockedout -contains "True")
 {
@@ -25,4 +24,3 @@ Write-host "Would you like to reset password? (Default is No)" -ForegroundColor 
        Default {Write-Host "No, Skipping" -ForegroundColor Green; exit} 
      } 
 Read-Host -Prompt "Press Enter to exit"
-
