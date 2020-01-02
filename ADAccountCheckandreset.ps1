@@ -1,4 +1,4 @@
-﻿#This script will check AD to see if user is locked out and then prompt for a password change/set user to change password 
+#This script will check AD to see if user is locked out and then prompt for a password change/set user to change password 
 #at next login
 
 
