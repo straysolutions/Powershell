@@ -25,3 +25,4 @@ Write-host "Would you like to reset password? (Default is No)" -ForegroundColor 
        Default {Write-Host "No, Skipping" -ForegroundColor Green; exit} 
      } 
 Read-Host -Prompt "Press Enter to exit"
+
