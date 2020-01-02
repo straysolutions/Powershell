@@ -1,0 +1,12 @@
+
+#run the below inside the powershell window to open your profile
+if (!(Test-Path (Split-Path $profile))) { mkdir (Split-Path $profile) } ; if (!(Test-Path $profile)) { New-Item $profile -ItemType file } ; notepad $profile
+
+
+
+# Add this to your profile. you will need to do this on both regular ps window and ps ise. make sure you change the $ownfunctionsdir to the path where you store your functions
+$OwnFunctionsDir = "$env:USERPROFILE\Documents\WindowsPowerShell\Functions"
+Write-Host "Loading own PowerShell functions from:" -ForegroundColor Green
+Write-Host "$OwnFunctionsDir" -ForegroundColor Yellow
+Get-ChildItem "$OwnFunctionsDir\*.ps1" | %{.$_}
+Write-Host ''

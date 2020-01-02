@@ -1,0 +1,1 @@
+﻿get-adcomputer -Filter * -Properties * -SearchBase "OU=Local Computers,DC=domain,DC=local" | select @{Label="Name";Expression={$_.name}}, @{Label="Password";Expression={$_.'ms-Mcs-AdmPwd'}} | sort name | Export-Csv C:\Temp\laps.csv -NoTypeInformation -Append
