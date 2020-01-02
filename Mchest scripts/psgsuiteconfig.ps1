@@ -1,0 +1,1 @@
+﻿Set-PSGSuiteConfig -ConfigName MyConfig -SetAsDefaultConfig -P12KeyPath "C:\Scripts\woven-mesh-260515-e569c5d43273.p12" -AppEmail powerhsell@woven-mesh-260515.iam.gserviceaccount.com -AdminEmail apenick@mchest.com -CustomerID $CustomerID -Domain mchest.com -Preference Domain -ServiceAccountClientID 117597659378321425672

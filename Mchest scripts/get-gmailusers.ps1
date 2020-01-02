@@ -1,0 +1,1 @@
+﻿Get-GSUserList  | Select-Object -Property PrimaryEmail,AliasValue | Out-GridView
