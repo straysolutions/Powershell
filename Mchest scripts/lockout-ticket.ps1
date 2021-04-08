@@ -14,8 +14,8 @@
 
 
 
-$From = "no-reply@mchest.com"
-$To = "support@mchest.com"
+$From = "email addy"
+$To = "emailaddy"
 $Subject = "User Account locked out"
 $Body = Get-Content "C:\temp\html.html" -Raw
 $SMTPServer = "smtp.gmail.com"
