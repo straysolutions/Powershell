@@ -8,20 +8,7 @@ function rdsremotehelp {
 #list of RDS servers
 
 $Servers = @(
-"accapp01"
-"itadmin"
-"appsportal"
-"109rds00"
-"109rds001"
-"109rds002"
-"109rds003"
-"130rds00"
-"130rds001"
-"130rds002"
-"130rds003"
-"131rds00"
-"131rds001"
-"131rds002"
+"SERVERS HERE"
 )
 
 #Initialize $Sessions which will contain all sessions
@@ -84,19 +71,7 @@ function rdssessionkiller {
 #list of RDS servers
 
 $Servers = @(
-"accapp01"
-"appsportal"
-"109rds00"
-"109rds001"
-"109rds002"
-"109rds003"
-"130rds00"
-"130rds001"
-"130rds002"
-"130rds003"
-"131rds00"
-"131rds001"
-"131rds002"
+"SERVERS HERE"
 )
 
 #Initialize $Sessions which will contain all sessions
