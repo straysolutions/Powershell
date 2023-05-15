@@ -1,0 +1,11 @@
+function update-sslsitebindings {
+
+$OldThumbprint = Read-Host -Prompt 'Old SSL Thumbprint?'
+$NewThumbprint = Read-Host -Prompt 'New SSL Thumbprint?'
+
+Get-WebBinding | Where-Object { $_.certificateHash -eq $OldThumbprint} | ForEach-Object {
+    Write-Host "Replacing Cert For "  $_ 
+    $_.RemoveSslCertificate()
+    $_.AddSslCertificate($NewThumbprint, 'My')
+}
+}
